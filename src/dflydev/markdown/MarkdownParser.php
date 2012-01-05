@@ -11,10 +11,6 @@
 
 namespace dflydev\markdown;
 
-#
-# Global default settings:
-#
-
 class MarkdownParser implements IMarkdownParser {
 
     /**

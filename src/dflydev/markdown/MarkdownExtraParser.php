@@ -11,14 +11,6 @@
 
 namespace dflydev\markdown;
 
-#
-# Global default settings:
-#
-
-# Optional class attribute for footnote links and backlinks.
-@define( 'MARKDOWN_FN_LINK_CLASS',         "" );
-@define( 'MARKDOWN_FN_BACKLINK_CLASS',     "" );
-
 class MarkdownExtraParser extends MarkdownParser {
 
     /**
