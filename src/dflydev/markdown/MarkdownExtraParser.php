@@ -76,7 +76,7 @@ class MarkdownExtraParser extends MarkdownParser {
 	var $predef_abbr = array();
 
 
-	function __construct() {
+	function __construct(array $configuration = null) {
 	#
 	# Constructor function. Initialize the parser object.
 	#
@@ -102,7 +102,7 @@ class MarkdownExtraParser extends MarkdownParser {
 			"doAbbreviations"    => 70,
 			);
 		
-		parent::__construct();
+		parent::__construct($configuration);
 	}
 
 	/**

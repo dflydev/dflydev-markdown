@@ -62,7 +62,7 @@ class MarkdownParser implements IMarkdownParser {
 	var $predef_titles = array();
 
 
-	function __construct()
+	function __construct(array $configuration = null)
 	{
 	#
 	# Constructor function. Initialize appropriate member variables.
@@ -84,11 +84,17 @@ class MarkdownParser implements IMarkdownParser {
 		asort($this->document_gamut);
 		asort($this->block_gamut);
 		asort($this->span_gamut);
+		if ($configuration) {
+		    foreach ($configuration as $key => $value) {
+		        $this->configureMarkdownParser($key, $value);
+		    }
+		}
 	}
 	
 	/**
-	 * (non-PHPdoc)
-	 * @see dflydev\markdown.IMarkdownParser::configureMarkdownParser()
+	 * Configure parser
+	 * @param string $key
+	 * @param mixed $value
 	 */
 	public function configureMarkdownParser($key, $value)
 	{

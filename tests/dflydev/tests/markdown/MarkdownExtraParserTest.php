@@ -11,25 +11,24 @@
 
 namespace dflydev\tests\markdown;
 
-class MarkdownExtraParserTest extends AbstractParserTest
+use dflydev\markdown\MarkdownExtraParser;
+
+class MarkdownExtraParserTest extends MarkdownParserTest
 {
 
-    /**
-     * (non-PHPdoc)
-     * @see dflydev\tests\markdown.AbstractParserTest::createParser()
-     */
-    public function createParser()
-    {
-        return new \dflydev\markdown\MarkdownExtraParser();
-    }
+    protected $configKeyTabWidth = \dflydev\markdown\MarkdownExtraParser::CONFIG_TAB_WIDTH;
 
     /**
-     * (non-PHPdoc)
-     * @see dflydev\tests\markdown.AbstractParserTest::configureTabWidth()
+     * Create a markdown parser.
+     * @param array $configuration Optional configuration
+     * @return \dflydev\markdown\IMarkdownParser
      */
-    public function configureTabWidth(\dflydev\markdown\IMarkdownParser $markdownParser, $width)
+    public function createParser($configuration = null)
     {
-        $markdownParser->configureMarkdownParser(\dflydev\markdown\MarkdownExtraParser::CONFIG_TAB_WIDTH, $width);
+        if ($configuration !== null) {
+            return new \dflydev\markdown\MarkdownExtraParser($configuration);
+        }
+        return new \dflydev\markdown\MarkdownExtraParser();
     }
     
 }

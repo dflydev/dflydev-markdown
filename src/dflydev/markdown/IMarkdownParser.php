@@ -19,12 +19,5 @@ interface IMarkdownParser {
      * @return string
      */
     public function transformMarkdown($text);
-    
-    /**
-     * Configure parser
-     * @param string $key
-     * @param mixed $value
-     */
-    public function configureMarkdownParser($key, $value);
 
 }
