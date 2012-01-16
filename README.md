@@ -28,6 +28,11 @@ Stripped in the following ways:
  * No more embedded plugin code (WordPress, bBlog, etc.)
  * No more top level function calls (`Markdown()`, etc.)
 
+Last synced with:
+
+ * PHP Markdown v1.0.1o
+ * PHP Markdown Extra v1.2.5
+
 
 Requirements
 ------------
