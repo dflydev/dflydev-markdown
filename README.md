@@ -46,7 +46,7 @@ Usage
 Simple usage for the standard Markdown ([details](http://michelf.com/projects/php-markdown/)) parser:
 
     <?php
-    use dflydev\markdown\Markdown;
+    use dflydev\markdown\MarkdownParser;
 
     $markdownParser = new MarkdownParser();
 
@@ -56,7 +56,7 @@ Simple usage for the standard Markdown ([details](http://michelf.com/projects/ph
 Simple usage for the Markdown Extra ([details](http://michelf.com/projects/php-markdown/extra/)) parser:
 
     <?php
-    use dflydev\markdown\MarkdownExtra;
+    use dflydev\markdown\MarkdownExtraParser;
 
     $markdownParser = new MarkdownExtraParser();
 
