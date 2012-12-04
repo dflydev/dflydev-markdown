@@ -148,7 +148,7 @@ class MarkdownParser implements IMarkdownParser {
 	 * Called after the transformation process to clear any variable 
 	 * which may be taking up memory unnecessarly.
 	 */
-	function teardown()
+	protected function teardown()
 	{
 		$this->urls = array();
 		$this->titles = array();
