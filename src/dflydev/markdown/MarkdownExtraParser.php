@@ -109,7 +109,7 @@ class MarkdownExtraParser extends MarkdownParser {
 	 * (non-PHPdoc)
 	 * @see dflydev\markdown.IMarkdownParser::configureMarkdownParser()
 	 */
-	public public function configureMarkdownParser($key, $value)
+	public function configureMarkdownParser($key, $value)
 	{
 	    switch($key) {
 	        case self::CONFIG_FOOTNOTE_LINK_TITLE:

@@ -96,7 +96,7 @@ class MarkdownParser implements IMarkdownParser {
 	 * @param string $key
 	 * @param mixed $value
 	 */
-	public public function configureMarkdownParser($key, $value)
+	public function configureMarkdownParser($key, $value)
 	{
 	    switch($key) {
 	        case self::CONFIG_TAB_WIDTH:
@@ -116,7 +116,7 @@ class MarkdownParser implements IMarkdownParser {
 	 * (non-PHPdoc)
 	 * @see dflydev\markdown.IMarkdownParser::transformMarkdown()
 	 */
-	public public function transformMarkdown($text)
+	public function transformMarkdown($text)
 	{
 	    return $this->transform($text);
 	}
