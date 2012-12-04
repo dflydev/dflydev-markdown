@@ -141,7 +141,7 @@ class MarkdownParser implements IMarkdownParser {
 		$this->titles = $this->predef_titles;
 		$this->html_hashes = array();
 		
-		$in_anchor = false;
+		$this->in_anchor = false;
 	}
 	
 	public function teardown() {
