@@ -144,11 +144,12 @@ class MarkdownParser implements IMarkdownParser {
 		$this->in_anchor = false;
 	}
 	
-	public function teardown() {
-	#
-	# Called after the transformation process to clear any variable 
-	# which may be taking up memory unnecessarly.
-	#
+	/**
+	 * Called after the transformation process to clear any variable 
+	 * which may be taking up memory unnecessarly.
+	 */
+	public function teardown()
+	{
 		$this->urls = array();
 		$this->titles = array();
 		$this->html_hashes = array();
