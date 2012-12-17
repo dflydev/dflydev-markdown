@@ -9,9 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace dflydev\markdown;
+namespace DflyDev\Markdown;
 
-class MarkdownExtraParser extends MarkdownParser {
+use \DflyDev\Markdown\Parser;
+
+/**
+ * Markdown Parser Extra
+ */
+class ExtraParser extends Parser {
 
     /**
      * Default title attribute for footnote links

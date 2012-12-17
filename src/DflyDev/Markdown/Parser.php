@@ -9,9 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace dflydev\markdown;
+namespace DflyDev\Markdown;
 
-class MarkdownParser implements IMarkdownParser {
+use \DflyDev\Markdown\IParser;
+
+/**
+ * Markdown Parser
+ */
+class Parser implements IParser {
 
     /**
      * Default suffix for empty elements
@@ -112,16 +117,6 @@ class MarkdownParser implements IMarkdownParser {
 	    //
 	}
 
-	/**
-	 * (non-PHPdoc)
-	 * @see dflydev\markdown.IMarkdownParser::transformMarkdown()
-	 */
-	public function transformMarkdown($text)
-	{
-	    return $this->transform($text);
-	}
-
-
 	# Internal hashes used during transformation.
 	var $urls = array();
 	var $titles = array();
@@ -155,7 +150,7 @@ class MarkdownParser implements IMarkdownParser {
 	}
 
 
-	function transform($text) {
+	public function transform($text) {
 	#
 	# Main function. Performs some preprocessing on the input text
 	# and pass it through the document gamut.

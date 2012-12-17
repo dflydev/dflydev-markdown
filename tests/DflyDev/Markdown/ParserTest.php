@@ -9,15 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace dflydev\markdown;
+namespace DflyDev\Markdown;
 
-interface IMarkdownParser {
+class ParserTest extends BaseParserTest
+{
+    
+    protected $configKeyTabWidth = Parser::CONFIG_TAB_WIDTH;
 
-    /**
-     * Transform Markdown text to HTML.
-     * @param string $text
-     * @return string
-     */
-    public function transformMarkdown($text);
-
+    protected function setUp()
+    {
+        $this->object = new Parser();
+    }
+    
 }

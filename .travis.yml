@@ -6,3 +6,5 @@ php:
 before_script:
   - wget -nc http://getcomposer.org/composer.phar
   - php composer.phar update
+after_script:
+  - "wget --quiet http://mauris.sg/bin/pdc.phar && php pdc.phar src"

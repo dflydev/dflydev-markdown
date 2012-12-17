@@ -12,16 +12,13 @@
 >
     <testsuites>
         <testsuite name="dflydev-markdown Test Suite">
-            <directory>./tests/dflydev/</directory>
+            <directory suffix="Test.php">tests</directory>
         </testsuite>
     </testsuites>
 
     <filter>
         <whitelist>
-            <directory>./src/dflydev/</directory>
-            <exclude>
-                <directory>./src/dflydev/*/resources</directory>
-            </exclude>
+            <directory>src/</directory>
         </whitelist>
     </filter>
 </phpunit>
