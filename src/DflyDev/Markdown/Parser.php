@@ -11,6 +11,11 @@
 
 namespace DflyDev\Markdown;
 
+use \DflyDev\Markdown\IParser;
+
+/**
+ * Markdown Parser
+ */
 class Parser implements IParser {
 
     /**

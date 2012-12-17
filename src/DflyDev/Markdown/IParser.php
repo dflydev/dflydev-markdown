@@ -11,12 +11,15 @@
 
 namespace DflyDev\Markdown;
 
+/**
+ * Provides an interface of what a Markdown parser in PHP can do
+ */
 interface IParser {
 
     /**
      * Transform Markdown text to HTML.
-     * @param string $text
-     * @return string
+     * @param string $text The Markdown text to be transformed
+     * @return string Returns the generated HTML text.
      */
     public function transform($text);
 

@@ -11,6 +11,11 @@
 
 namespace DflyDev\Markdown;
 
+use \DflyDev\Markdown\Parser;
+
+/**
+ * Markdown Parser Extra
+ */
 class ExtraParser extends Parser {
 
     /**
