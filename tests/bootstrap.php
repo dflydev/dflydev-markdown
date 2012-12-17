@@ -8,5 +8,4 @@
  * file that was distributed with this source code.
  */
 
-$loader = require dirname(__DIR__).'/vendor/autoload.php';
-$loader->add('dflydev\\tests\\markdown', 'tests');
+$loader = require(dirname(__DIR__) .'/vendor/autoload.php');

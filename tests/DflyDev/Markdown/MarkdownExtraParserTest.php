@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace dflydev\tests\markdown;
+namespace DflyDev\Markdown;
 
-use dflydev\markdown\MarkdownExtraParser;
+use MarkdownExtraParser;
 
 class MarkdownExtraParserTest extends MarkdownParserTest
 {
 
-    protected $configKeyTabWidth = \dflydev\markdown\MarkdownExtraParser::CONFIG_TAB_WIDTH;
+    protected $configKeyTabWidth = MarkdownExtraParser::CONFIG_TAB_WIDTH;
 
     /**
      * Create a markdown parser.
@@ -26,9 +26,9 @@ class MarkdownExtraParserTest extends MarkdownParserTest
     public function createParser($configuration = null)
     {
         if ($configuration !== null) {
-            return new \dflydev\markdown\MarkdownExtraParser($configuration);
+            return new MarkdownExtraParser($configuration);
         }
-        return new \dflydev\markdown\MarkdownExtraParser();
+        return new MarkdownExtraParser();
     }
     
 }
