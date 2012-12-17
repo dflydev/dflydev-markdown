@@ -11,7 +11,7 @@
 
 namespace DflyDev\Markdown;
 
-class ExtraParserTest extends ParserTest
+class ExtraParserTest extends BaseParserTest
 {
 
     protected $configKeyTabWidth = ExtraParser::CONFIG_TAB_WIDTH;
