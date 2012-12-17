@@ -1,13 +1,10 @@
-PHP Markdown & Extra
-====================
+# Markdown Processing for PHP
 
 An updated and stripped version of the original [PHP Markdown](http://michelf.com/projects/php-markdown/)
-by [Michel Fortin](http://michelf.com/). Works quite well with PSR-0
-autoloaders and is [Composer](http://packagist.org/) friendly.
+by [Michel Fortin](http://michelf.com/). Works quite well with [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md) compliant
+autoloaders and is [Composer](http://getcomposer.org/) friendly.
 
-
-Changes from the official PHP Markdown & Extra
-----------------------------------------------
+##Changes from the official "PHP Markdown & Extra"
 
 The initial pass at updating PHP Markdown & Extra left the core of
 the code more or less intact but the changes to the organization
@@ -16,12 +13,12 @@ a hard fork from Markdown 1.0.1n and MarkdownExtra 1.2.4.
 
 Updated in the following ways:
 
- * Moved parser classes into their own files
- * Using PHP 5.3 namespaces
- * Following [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md) standards
- * Replaced `@define` configuration variables with class `const` variables
- * Integrated with [Travis CI](http://travis-ci.org/)
- * Made [Composer](http://packagist.org/) friendly
+ - Moved parser classes into their own files ([Read more at PSR-1 Section 2.3](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md#23-side-effects))
+ - Using PHP 5.3 namespaces
+ - Following [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md) standards
+ - Replaced `@define` configuration variables with class `const` variables
+ - Unit Testing with [Travis CI](http://travis-ci.org/)
+ - Made [Composer](https://packagist.org/packages/dflydev/markdown) friendly
 
 Stripped in the following ways:
 
@@ -34,18 +31,26 @@ Last synced with:
  * PHP Markdown Extra v1.2.5
 
 
-Requirements
-------------
+##Requirements
 
  * PHP 5.3+
 
+##Installation
 
-Usage
------
+To use Markdown in your PHP application through Composer, add the following to the "require" section of your [`composer.json`](http://getcomposer.org/doc/01-basic-usage.md) file:
+
+    {
+		"require": {
+			"dflydev/markdown": "1.0.*"
+		}
+	}
+
+##Usage
 
 Simple usage for the standard Markdown ([details](http://michelf.com/projects/php-markdown/)) parser:
 
     <?php
+
     use dflydev\markdown\MarkdownParser;
 
     $markdownParser = new MarkdownParser();
@@ -64,21 +69,17 @@ Simple usage for the Markdown Extra ([details](http://michelf.com/projects/php-m
     $markdownParser->transformMarkdown("#Hello World");
 
 
-License
--------
+##License
 
 This library is licensed under the New BSD License - see the LICENSE file for details.
 
-
-Community
----------
+##Community
 
 If you have questions or want to help out, join us in the
 [#dflydev](irc://irc.freenode.net/#dflydev) channel on irc.freenode.net.
 
 
-Not Invented Here
------------------
+###Not Invented Here
 
 The original [PHP Markdown](http://michelf.com/projects/php-markdown/) was
 quite excellent but was not as easy to use as it could be in more modern PHP
