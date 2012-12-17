@@ -11,8 +11,6 @@
 
 namespace DflyDev\Markdown;
 
-use MarkdownExtraParser;
-
 class MarkdownExtraParserTest extends MarkdownParserTest
 {
 
