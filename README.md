@@ -19,6 +19,7 @@ Updated in the following ways:
  - Replaced `@define` configuration variables with class `const` variables
  - Unit Testing with [Travis CI](http://travis-ci.org/)
  - Made [Composer](https://packagist.org/packages/dflydev/markdown) friendly
+ - code tested well with [PDC](http://github.com/packfire/pdc)
 
 Stripped in the following ways:
 
@@ -51,22 +52,22 @@ Simple usage for the standard Markdown ([details](http://michelf.com/projects/ph
 
     <?php
 
-    use dflydev\markdown\MarkdownParser;
+    use Dflydev\Markdown\Parser;
 
-    $markdownParser = new MarkdownParser();
+    $markdown = new Parser();
 
-    // Will return <h1>Hello World</h1>
-    $markdownParser->transformMarkdown("#Hello World");
+    // Will return "<h1>Hello World</h1>"
+    $markdown->transform("#Hello World");
 
 Simple usage for the Markdown Extra ([details](http://michelf.com/projects/php-markdown/extra/)) parser:
 
     <?php
-    use dflydev\markdown\MarkdownExtraParser;
+    use DflyDev\Markdown\ExtraParser;
 
-    $markdownParser = new MarkdownExtraParser();
+    $markdown = new ExtraParser();
 
-    // Will return <h1>Hello World</h1>
-    $markdownParser->transformMarkdown("#Hello World");
+    // Will return "<h1>Hello World</h1>"
+    $markdown->transform("#Hello World");
 
 
 ##License
