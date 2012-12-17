@@ -11,7 +11,7 @@
 
 namespace DflyDev\Markdown;
 
-class MarkdownExtraParser extends MarkdownParser {
+class ExtraParser extends Parser {
 
     /**
      * Default title attribute for footnote links

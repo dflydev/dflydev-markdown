@@ -11,13 +11,13 @@
 
 namespace DflyDev\Markdown;
 
-interface IMarkdownParser {
+interface IParser {
 
     /**
      * Transform Markdown text to HTML.
      * @param string $text
      * @return string
      */
-    public function transformMarkdown($text);
+    public function transform($text);
 
 }
