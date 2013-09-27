@@ -63,6 +63,10 @@ Simple usage for the Markdown Extra ([details](http://michelf.com/projects/php-m
     // Will return <h1>Hello World</h1>
     $markdownParser->transformMarkdown("#Hello World");
 
+Also you can install it global and use by cli:
+
+    composer global require dflydev/markdown
+    md.php README.md README.html
 
 License
 -------
