@@ -3,7 +3,9 @@
     "type": "library",
     "description": "PHP Markdown & Extra",
     "homepage": "http://github.com/dflydev/dflydev-markdown",
-    "keywords": ["markdown"],
+    "keywords": [
+		"markdown"
+	],
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -29,7 +31,9 @@
         "php": ">=5.3"
     },
     "autoload": {
-        "psr-0": { "dflydev\\markdown": "src" }
+        "psr-0": {
+			"dflydev\\markdown": "src"
+		}
     },
     "extra": {
         "branch-alias": {
