@@ -5,6 +5,11 @@ An updated and stripped version of the original [PHP Markdown](http://michelf.co
 by [Michel Fortin](http://michelf.com/). Works quite well with PSR-0
 autoloaders and is [Composer](http://packagist.org/) friendly.
 
+[![Build Status](https://secure.travis-ci.org/dflydev/markdown.png?branch=master)](http://travis-ci.org/dflydev/markdown)
+
+On [Packagist](https://packagist.org/packages/dflydev/markdown):
+[![Latest Stable Version](https://poser.pugx.org/dflydev/markdown/version.png)](https://packagist.org/packages/dflydev/markdown)
+[![Download count](https://poser.pugx.org/dflydev/markdown/d/total.png)](https://packagist.org/packages/dflydev/markdown)
 
 Changes from the official PHP Markdown & Extra
 ----------------------------------------------
