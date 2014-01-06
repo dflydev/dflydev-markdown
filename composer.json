@@ -1,7 +1,7 @@
 {
     "name": "dflydev/markdown",
     "type": "library",
-    "description": "PHP Markdown & Extra",
+    "description": "PHP Markdown & Extra - DEPRECATED",
     "homepage": "http://github.com/dflydev/dflydev-markdown",
     "keywords": ["markdown"],
     "license": "BSD-3-Clause",
